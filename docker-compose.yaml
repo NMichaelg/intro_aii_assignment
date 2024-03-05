@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  app:
+    container_name: IntroAI_container
+    image : introai_image
+    build: .
+    ports: 
+      - 69:69
+    volumes:
+      - .:/app
+    tty: true
